@@ -135,10 +135,7 @@ section{padding:100px 32px;max-width:1100px;margin:0 auto}
 .price-features li{font-size:13px;color:#bbb;padding:6px 0;border-top:1px solid var(--gray3);display:flex;align-items:center;gap:8px}
 .price-features li:first-child{border-top:none}
 .price-features li::before{content:'✓';color:var(--lime);font-size:11px;flex-shrink:0}
-.promo-banner{background:var(--lime-bg);border:1px solid var(--lime-border);border-radius:8px;padding:20px 24px;margin-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;max-width:700px}
-.promo-text{font-size:15px;font-weight:500}
-.promo-text span{color:var(--lime)}
-.promo-sub{font-size:12px;color:var(--gray);margin-top:2px}
+.price-fineprint{font-size:12px;color:var(--gray);margin-top:24px;max-width:700px;text-align:center}
 
 /* CTA */
 .cta-section{background:var(--lime);padding:80px 32px;text-align:center}
@@ -292,35 +289,28 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
   <h2 class="sec-h2">Simple pricing.<br><em>Free to try.</em></h2>
   <p class="sec-desc">One installation fee. Try it free for 90 days. Then a flat monthly rate — no contracts, no hidden fees.</p>
   <div class="pricing-grid">
-    <div class="price-card">
-      <div class="price-tier">Residential</div>
-      <div class="price-amount">$29<span>/month</span></div>
-      <div class="price-note">after 90-day free trial</div>
-      <ul class="price-features">
-        <li>Full circuit monitoring</li>
-        <li>CLIDE AI agent</li>
-        <li>Mobile app access</li>
-        <li>Alert history</li>
-        <li>Service dispatch</li>
-      </ul>
-    </div>
     <div class="price-card featured">
-      <div class="price-tier lime">Commercial / Rental</div>
-      <div class="price-amount">$49<span>/panel/mo</span></div>
-      <div class="price-note">after 90-day free trial</div>
+      <div class="price-tier lime">Install</div>
+      <div class="price-amount">$399<span> one-time</span></div>
+      <div class="price-note">includes everything to get started</div>
       <ul class="price-features">
-        <li>Everything in Residential</li>
-        <li>Multi-unit management</li>
-        <li>Property manager dashboard</li>
-        <li>Vacancy monitoring</li>
-        <li>Priority service response</li>
+        <li>Refoss EM16P circuit monitor (yours to keep)</li>
+        <li>CLiDE Brain on-site device (installed by PowerMeans Electric)</li>
+        <li>90 days free monitoring included</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <div class="price-tier">Monthly</div>
+      <div class="price-amount">$29<span>/month</span></div>
+      <div class="price-note">after 90 days</div>
+      <ul class="price-features">
+        <li>Cancel anytime</li>
+        <li>Keep your Refoss monitor if you cancel</li>
+        <li>CLiDE Brain device is returned to PowerMeans</li>
       </ul>
     </div>
   </div>
-  <div class="promo-banner">
-    <div><div class="promo-text">Installation: <span>$199 flat</span></div><div class="promo-sub">Covers hardware + labor. One-time. No surprises.</div></div>
-    <div><div class="promo-text">First <span>90 days free</span></div><div class="promo-sub">No subscription until you've seen CLIDE work.</div></div>
-  </div>
+  <p class="price-fineprint">Professional installation by PowerMeans Electric, Dripping Springs TX · myclide.com</p>
 </section>
 
 <!-- CTA -->
