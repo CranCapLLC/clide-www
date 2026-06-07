@@ -28,14 +28,9 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,8,8,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray3)}
 .nav-inner{max-width:1100px;margin:0 auto;padding:0 32px;height:72px;display:flex;align-items:center;justify-content:space-between}
-.nav-wordmark{font-family:'Space Mono',monospace;font-size:20px;font-weight:700;letter-spacing:-0.5px;color:var(--white);text-decoration:none}
-.nav-wordmark span{color:var(--lime)}
-.nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:var(--gray);text-decoration:none;transition:color 0.15s}
-.nav-links a:hover{color:var(--white)}
-.nav-cta{background:var(--lime)!important;color:#000!important;padding:9px 20px;border-radius:3px;font-weight:700!important}
-.nav-cta:hover{opacity:0.85}
-@media(max-width:640px){.nav-links{display:none}}
+.nav-logo{height:52px;width:auto;display:block}
+.nav-back{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;color:var(--gray);text-decoration:none;transition:color 0.15s;text-transform:uppercase}
+.nav-back:hover{color:var(--white)}
 
 /* SECTIONS */
 section{padding:100px 32px;max-width:1100px;margin:0 auto}
@@ -61,8 +56,7 @@ section{padding:100px 32px;max-width:1100px;margin:0 auto}
 /* FOOTER */
 footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32px}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-.footer-wordmark{font-family:'Space Mono',monospace;font-size:16px;font-weight:700;letter-spacing:-0.5px;color:var(--white);text-decoration:none}
-.footer-wordmark span{color:var(--lime)}
+.footer-logo{height:30px;width:auto}
 .footer-links{display:flex;gap:24px;flex-wrap:wrap}
 .footer-links a{font-family:'Space Mono',monospace;font-size:10px;color:var(--gray2);text-decoration:none;letter-spacing:0.06em;transition:color 0.15s}
 .footer-links a:hover{color:var(--gray)}
@@ -73,13 +67,8 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-wordmark">CLi<span>DE</span></a>
-    <div class="nav-links">
-      <a href="/#how">How it works</a>
-      <a href="/#features">Features</a>
-      <a href="/#pricing">Pricing</a>
-      <a href="/#pricing" class="nav-cta">Get Started</a>
-    </div>
+    <img src="/clide-logo.png" class="nav-logo" alt="CLiDE">
+    <a href="/" class="nav-back">← Back</a>
   </div>
 </nav>
 
@@ -134,7 +123,7 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
 
 <footer>
   <div class="footer-inner">
-    <a href="/" class="footer-wordmark">CLi<span>DE</span></a>
+    <img src="/clide-logo.png" class="footer-logo" alt="CLiDE">
     <div class="footer-links">
       <a href="/#how">How it works</a>
       <a href="/#pricing">Pricing</a>
