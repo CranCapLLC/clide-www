@@ -46,7 +46,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,8,8,0.92);
 
 /* HERO */
 .hero-wrap{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
-.hero-grid{position:absolute;right:0;top:0;bottom:0;width:50%;opacity:0.025;background-image:linear-gradient(var(--lime) 1px,transparent 1px),linear-gradient(90deg,var(--lime) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.hero-grid{position:absolute;right:0;top:0;bottom:0;width:50%;opacity:0.045;background-image:linear-gradient(var(--lime) 1px,transparent 1px),linear-gradient(90deg,var(--lime) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
 .hero{max-width:1100px;margin:0 auto;padding:140px 32px 80px;position:relative;z-index:1}
 .hero-eyebrow{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.2em;color:var(--lime);text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:10px}
 .hero-eyebrow::before{content:'';display:inline-block;width:32px;height:1px;background:var(--lime)}
@@ -128,6 +128,7 @@ section{padding:100px 32px;max-width:1100px;margin:0 auto}
 @media(max-width:600px){.pricing-grid{grid-template-columns:1fr}}
 .price-card{background:var(--card);border:1px solid var(--card-b);border-radius:8px;padding:28px}
 .price-card.featured{border-color:var(--lime-border);background:var(--lime-bg)}
+.copy-card{max-width:700px;margin:40px auto 0}
 .price-tier{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.1em;color:var(--gray);text-transform:uppercase;margin-bottom:12px}
 .price-tier.lime{color:var(--lime)}
 .price-amount{font-family:'Space Mono',monospace;font-size:36px;font-weight:700;color:var(--white);line-height:1}
@@ -166,7 +167,7 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
       <a href="#features">Features</a>
       <a href="#clide" style="color:#8B5CF6">CLIDE</a>
       <a href="#pricing">Pricing</a>
-      <a href="/training" class="nav-cta">Team Training</a>
+      <a href="/signup" class="nav-cta">Get Started</a>
     </div>
   </div>
 </nav>
@@ -195,7 +196,7 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
   <div class="sec-label">More than monitoring</div>
   <h2 class="sec-h2">A licensed electrician is watching.<br><em>Before it becomes an emergency.</em></h2>
   <p class="sec-desc">CLiDE isn't a gadget that beeps and leaves you guessing. The licensed electricians who installed it watch your panel — and when CLiDE flags something serious, we reach out. The point is to catch problems early, so you're not making the panicked emergency call at all. And if you do need us, it's one tap in the app — we already have your panel data and we already know your house.</p>
-  <div class="price-card" style="max-width:700px;margin-top:40px">
+  <div class="price-card copy-card">
     <ul class="price-features">
       <li>A real person watches your alerts — we reach out when it's critical</li>
       <li>One tap in the app to request service — your data already in hand</li>
@@ -204,6 +205,15 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
     </ul>
   </div>
 </section>
+
+<!-- NOVELTY / PATENT -->
+<div class="clide-band">
+  <div class="features-inner">
+    <div class="clide-tag">Patent-pending · First of its kind</div>
+    <h2 class="clide-title">Nobody else has this.<br><em>You could be among the first.</em></h2>
+    <p class="clide-desc">CLiDE is a brand-new, patent-pending invention (USPTO #64/075,336) — circuit-level AI detection that doesn't exist anywhere else. Not a smart plug, not another energy app. The first system that learns your home's electrical fingerprint and catches failures before they happen. Founders members aren't just early customers — they're among the first homes in the country to have it.</p>
+  </div>
+</div>
 
 <!-- CLIDE HERO BAND -->
 <div class="clide-band" id="clide">
@@ -260,8 +270,12 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
     <img src="/app-circuits.jpg" alt="myCLiDE circuits — per-circuit breakdown">
     <img src="/app-chat.jpg" alt="myCLiDE chat — ask CLiDE about your home">
   </div>
-  <div style="margin-top:40px">
-    <a href="https://apps.apple.com/us/app/myclide/id6762376413" class="btn-dark">Download myCLiDE on the App Store →</a>
+  <div style="display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:40px">
+    <a href="https://apps.apple.com/us/app/myclide/id6762376413"><img src="/apple-app-store-badge.svg" alt="Download myCLiDE on the App Store" style="height:54px;width:auto;display:block"></a>
+    <div style="display:inline-flex;flex-direction:column;justify-content:center;height:54px;padding:0 18px;border:1px solid var(--card-b);border-radius:8px;background:#111;box-sizing:border-box">
+      <span style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:0.12em;color:var(--gray);text-transform:uppercase">Coming soon</span>
+      <span style="font-family:'Space Mono',monospace;font-size:16px;font-weight:700;color:#bbb;line-height:1.15">Google Play</span>
+    </div>
   </div>
   <p class="sec-desc" style="margin-top:16px;font-size:13px">Free to download — activates after your CLiDE install.</p>
 </section>
@@ -269,7 +283,7 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
 <!-- HOW IT WORKS -->
 <section id="how">
   <div class="sec-label">How it works</div>
-  <h2 class="sec-h2">Installed in 90 minutes.<br><em>Watching forever.</em></h2>
+  <h2 class="sec-h2">Installed in 90 minutes.<br><em>Always monitoring.</em></h2>
   <p class="sec-desc">No panel replacement. No rewiring. A licensed PowerMeans electrician installs the hardware and you're live the same day.</p>
   <div class="how-grid">
     <div>
@@ -331,7 +345,7 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
   <div class="sec-label">Pricing</div>
   <h2 class="sec-h2">No mystery pricing.<br><em>Here's exactly what you pay for.</em></h2>
   <p class="sec-desc">One installation fee. Try it free for 90 days. Then a flat monthly rate — no contracts, no hidden fees.</p>
-  <div class="price-card" style="max-width:700px;margin-top:40px">
+  <div class="price-card copy-card">
     <div class="price-tier lime">What's included</div>
     <ul class="price-features">
       <li>The Refoss energy meter (~$170 — you could buy it yourself; we install it right)</li>
@@ -366,7 +380,7 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
 
 <!-- SAFETY NET -->
 <section style="padding-top:0">
-  <div class="price-card featured" style="max-width:700px;margin:0 auto">
+  <div class="price-card featured copy-card">
     <p class="sec-desc" style="max-width:none;margin:0">No lock-in. Cancel anytime and keep the Refoss meter — it's yours, use the free Refoss app. We simply collect the CLiDE Brain. No penalty, no equipment to return. <span style="color:var(--lime)">We think you'll be back.</span></p>
   </div>
 </section>
