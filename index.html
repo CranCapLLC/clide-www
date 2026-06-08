@@ -54,8 +54,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,8,8,0.92);
 .hero-h1 em{color:var(--lime);font-style:normal}
 .hero-sub{font-size:clamp(16px,2vw,20px);color:var(--gray);line-height:1.65;max-width:520px;margin-bottom:48px;font-weight:300}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:72px}
-.btn-primary{background:var(--lime);color:#000;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.06em;padding:15px 30px;border-radius:3px;text-decoration:none;transition:opacity 0.15s}
+.btn-primary{background:var(--lime);color:#000;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.06em;padding:15px 30px;border-radius:3px;text-decoration:none;transition:opacity 0.15s;display:inline-block}
 .btn-primary:hover{opacity:0.85}
+@media(max-width:600px){.btn-primary{display:inline-block;white-space:normal;max-width:100%;font-size:11px;padding:14px 22px;line-height:1.4}}
 .btn-ghost{border:1px solid var(--gray2);color:var(--gray);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;padding:15px 30px;border-radius:3px;text-decoration:none;transition:all 0.15s}
 .btn-ghost:hover{border-color:var(--lime-border);color:var(--white)}
 .hero-stats{display:flex;gap:52px;flex-wrap:wrap}
@@ -265,11 +266,11 @@ footer{background:var(--black);border-top:1px solid var(--gray3);padding:40px 32
     <div class="clide-info">
       <div class="clide-tag">Meet CLIDE</div>
       <h2 class="clide-title">The AI that<br><em>knows your home.</em></h2>
-      <p class="clide-desc">CLIDE — Circuit-Level Intelligence Detection Engine — runs 24/7 on a dedicated Mac Mini at your location. It doesn't compare your home to averages. It learns your specific circuits and flags what matters.</p>
+      <p class="clide-desc">CLIDE — Circuit-Level Intelligence Detection Engine — runs 24/7 on the CLiDE Brain, a dedicated device installed at your location. It doesn't compare your home to averages. It learns your specific circuits and flags what matters.</p>
       <p class="clide-desc" style="border-left:2px solid #8B5CF6;padding-left:16px;color:#cbb9f5;margin-bottom:24px">Included with every subscription: a private AI assistant powered by Anthropic's Claude — with memory that carries across every conversation. Ask it anything about your home. Many customers find they don't need a separate AI subscription at all.</p>
       <div class="clide-pills">
         <span class="pill">ALWAYS ON</span>
-        <span class="pill">ON-PREMISE AI</span>
+        <span class="pill">ON-PREMISE MONITORING</span>
         <span class="pill">YOUR PANEL ONLY</span>
         <span class="pill">PLAIN ENGLISH</span>
         <span class="pill">LOCAL DATA</span>
